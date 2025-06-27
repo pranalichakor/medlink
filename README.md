@@ -106,9 +106,5 @@ npm run dev
 
 ---
 
-### 🧾 License
-
-This project is for educational/demo purposes. Feel free to modify and use.
-
  thankyou!!!!!!!!
 
