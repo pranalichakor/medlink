@@ -19,7 +19,12 @@ connectDB();
 connectCloudinary();
 
 // Middleware
-app.use(cors());
+// Middleware
+app.use(cors({
+  origin: 'https://medlink1.netlify.app',
+  credentials: true,
+}));
+app.use(express.json());
 app.use(express.json());
 
 // Routes
