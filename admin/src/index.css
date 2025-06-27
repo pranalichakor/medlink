@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply w-full h-10 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+*{
+  font-family: Outfit;
+}
+.nav-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg transition-all hover:bg-gray-100 text-sm font-medium;
+}
+
