@@ -1,16 +1,19 @@
 import React, { useContext, useState } from 'react';
 import { AdminContext } from '../context/AdminContext';
 import { DoctorContext } from '../context/DoctorContext';
-import { assets } from '../assets/assets';
+import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [state, setState] = useState('Admin');
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const loginMode = params.get('mode'); // ?mode=admin or ?mode=doctor
+
+  const [state, setState] = useState(loginMode === 'doctor' ? 'Doctor' : 'Admin');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
+
   const { setAToken, backendUrl } = useContext(AdminContext);
   const { setDToken } = useContext(DoctorContext);
   const navigate = useNavigate();

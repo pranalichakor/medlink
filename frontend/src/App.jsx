@@ -16,6 +16,8 @@ import Appointments from './pages/Appointments' // ✅ Import this
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
+
+
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
@@ -31,6 +33,8 @@ const App = () => {
         <Route path="/My-appointments" element={<MyAppointments />} />
         <Route path="/appointment/:docId" element={<Appointments key={window.location.pathname} />} />
         <Route path="/my-profile" element={<MyProfile />} />
+        
+
       </Routes>
       <Footer />
     </div>
