@@ -40,7 +40,7 @@ const { token, setToken } = useContext(AppContext);
           <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </li>
         <li className='py-1'>
-          <a href="http://localhost:5174" target="_self">
+          <a href="https://medlink12.netlify.app/" target="_self">
   <button className='bg-white border border-blue-600 text-blue-600 px-4 py-1 rounded-full hover:bg-blue-50 transition-all'>
     Admin Panel
   </button>
